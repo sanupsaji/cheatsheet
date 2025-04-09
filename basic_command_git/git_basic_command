@@ -1,0 +1,48 @@
+Git Quick Reference Sheet
+CONFIGURATION
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --list
+INIT & CLONE
+git init                      # Start new repo
+git clone <url>               # Clone existing repo
+STAGING & COMMITTING
+git status                    # Check file status
+git add <file>                # Stage file
+git add .                     # Stage all
+git commit -m "message"       # Commit with message
+git commit -am "message"      # Add + commit tracked files
+BRANCHING
+git branch                    # List branches
+git branch <name>             # Create branch
+git checkout <name>           # Switch branch
+git checkout -b <name>        # Create + switch
+git merge <branch>            # Merge branch
+git branch -d <name>          # Delete branch
+REMOTE REPO
+git remote -v                 # Show remotes
+git remote add origin <url>   # Add remote
+git push -u origin <branch>   # Push + set upstream
+git push                      # Push changes
+git pull                      # Pull changes
+LOG & HISTORY
+git log                       # Full history
+git log --oneline             # Short history
+git show <commit>             # Show commit details
+UNDO / RESET
+git reset <file>              # Unstage file
+git checkout -- <file>        # Discard changes
+git revert <commit>           # Revert commit
+git reset --hard              # Full reset (⚠️)
+STASH
+git stash                     # Save changes
+git stash list                # Show stash
+git stash pop                 # Apply latest
+TAGGING
+git tag                       # List tags
+git tag <name>                # Create tag
+git push origin <tag>         # Push tag
+CLEANING
+git clean -n                  # Preview delete
+git clean -f                  # Delete untracked files
+
