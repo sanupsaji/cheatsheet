@@ -1,0 +1,2 @@
+# cheatsheet
+All Basic commands
