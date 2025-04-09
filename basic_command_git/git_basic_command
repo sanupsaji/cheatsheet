@@ -22,6 +22,8 @@ git branch -d <name>          # Delete branch
 REMOTE REPO
 git remote -v                 # Show remotes
 git remote add origin <url>   # Add remote
+git remote set-url origin https://github.com/new-repo/new-repo.git # To switch to a different remote repository
+git branch -a #command lists both local and remote branches
 git push -u origin <branch>   # Push + set upstream
 git push                      # Push changes
 git pull                      # Pull changes
